@@ -52,7 +52,7 @@ for i in np.random.choice(np.arange(0, len(Y_test)), size = (10,)):
  
 	image = (X_test[i] * 255).reshape((28, 28)).astype("uint8")
  
-	print "Actual digit is {0}, predicted {1}".format(Y_test[i], prediction[0])
+	print("Actual digit is {0}, predicted {1}".format(Y_test[i], prediction[0]))
 	cv2.imshow("Digit", image)
 	cv2.waitKey(0)             
 
