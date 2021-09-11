@@ -42,7 +42,7 @@ model.add(Dense(10, activation='softmax'))
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 
-model.fit(X_train, Y_train, batch_size=32, nb_epoch=1, verbose=1)
+model.fit(X_train, Y_train, batch_size=32, epochs=10, verbose=1)
            
  
 for i in np.random.choice(np.arange(0, len(Y_test)), size = (10,)):
